@@ -2,8 +2,9 @@
 title: The Chicago Tech Reader
 email: nelsonc1991@siu.edu
 description: News, events, and articles about design and devlopment hot off the press from the Windy City.
-baseurl: "http://jailbot.github.io/newspaper-blog/"
-url: "http://jailbot.github.io/newspaper-blog/"
+#http://jailbot.github.io/newspaper-blog
+baseurl: "http://jailbot.github.io/newspaper-blog"
+url: ""
 twitter_username: bigrayarea
 github_username:  jailbot
 
