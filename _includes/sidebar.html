@@ -1,0 +1,44 @@
+<div id="sidebar">
+  <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+
+  <img class="profile-pic" src="{{ "/img/self.png" | prepend: site.url }}" alt="profile picture">
+
+  <p class="site-description">{{ site.description }}</p>
+
+  <ul class="sidebar-social">
+    {% if site.twitter_username %}<li>
+      <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="twitter">
+        <i class="fa fa-twitter"></i>
+        <span>{{ site.twitter_username }}</span>
+      </a>
+    </li>
+    {% endif %} <!-- check if twitter is set -->
+
+    {% if site.github_username %}<li>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" title="github">
+        
+        <span>{{ site.github_username }}</span>
+        <i class="fa fa-github-alt"></i>
+      </a>
+    </li>
+    {% endif %} <!-- check if github is set -->
+
+    {% if site.email %}<li>
+      <a href="mailto:{{ site.email }}" title="email">
+        <i class="fa fa-envelope-o"></i>
+        <span>{{ site.email }}</span>
+      </a>
+    </li>
+    {% endif %} <!-- check if email is set -->
+    <li>
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="rss">
+        <i class="fa fa-rss"></i>
+        <span>Subscribe</span>
+      </a>
+    </li>
+  </ul>
+  <div class="sidebar-ad">
+    <h3>Your AD here!</h3>
+    <p>Contact <a href="mailto:nelsonc1991@siu.edu">Clark</a> to see about a custom advertisement in this space</p>
+  </div>
+</div>

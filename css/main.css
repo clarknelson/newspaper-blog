@@ -1,0 +1,257 @@
+/* Base */
+/* ----------------------------------------------------------*/
+
+*{margin: 0; padding: 0;}
+html,body{ height: 100%; }
+h1,h2,h3,h4,h5,h6{ font-size: 100%; font-weight: 400; }
+
+body{
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 150%;
+  background: url('../img/IMAG0072.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+nav li a{
+  font-size: 18px;
+}
+h1{
+  font-size: 36px;
+}
+
+a{ 
+  color: #327EB6;
+  text-decoration: none;
+  padding: 1px;
+}
+a:hover{
+  color: #69D9E1;
+}
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 100%, 0%, 0.5);
+}
+
+/* Container */
+#newspaper{
+  position: relative;
+  max-width: 800px;
+  border-radius: 4px;
+  margin: 325px auto;
+  padding: 25px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  background: -webkit-linear-gradient(top, rgba(247, 247, 247, 0.85), rgba(227, 227, 227, 0.85)), url('../img/natural_paper.png');
+  background: linear-gradient(to bottom, rgba(247, 247, 247, 0.85), rgba(227, 227, 227, 0.85)), url('../img/natural_paper.png');
+  box-shadow: 2px 1px 10px 1px black;
+}
+
+
+
+#header-time{
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+#header-time hr{
+  border: 2px solid #222;
+  margin: 3px 0 2px;
+
+}
+#header-time span{
+  display: inline-block;
+}
+#local-location{
+  float: left;
+}
+#local-date{
+  float: right;
+}
+
+nav{
+  position: relative;
+  padding-top: 180px;
+  border-bottom: 1px solid #222;
+}
+nav ul{
+  position: absolute;
+  bottom: 0;
+}
+nav li{
+  display: inline-block;
+  list-style: none;
+}
+nav li:first-of-type{
+  margin-left: 2px;
+}
+nav li a{
+  position: relative;
+  bottom: 0px;
+  color: #222;
+  padding: 0 10px 0 4px;
+  margin-right: 2px;
+}
+nav a:hover{
+  border-bottom: 1px solid #222;
+  bottom: -2px;
+  color: #222;
+}
+
+
+@media screen and (max-width: 800px) {
+  nav li{
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+
+
+#sidebar{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 40%;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+.site-title{
+  font-family: Georgia, serif;
+  margin: 65px 5px 12px 0;
+
+  font-style: italic;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+}
+.site-title a{ color: #222; }
+
+.profile-pic{
+  width: 100%;
+}
+
+.site-description{
+  box-sizing: border-box;
+  width: 100%;
+  line-height: 130%;
+  margin: 5px 0; 
+}
+
+.sidebar-social{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 36px 0;
+}
+.sidebar-social li{ 
+  list-style: none;
+}
+.sidebar-social li i{
+  float: right;
+}
+.sidebar-social li a{ 
+  color: #222;
+}
+.sidebar-social li a:hover{ 
+  color: #327EB6; 
+}
+
+.sidebar-ad{
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 25px 0; 
+}
+.sidebar-ad h3{
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  #sidebar{
+    width: 100%;
+    float: none;
+    border-right: none;
+  }
+  .profile-pic{
+    margin-bottom: 25px;
+  }
+}
+
+#content{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 59%;
+  margin-top: 155px;
+  padding-left: 12px;
+  border-left: 1px solid #222;
+}
+
+
+
+/* Home styles */
+/* ----------------------------------------------------------*/
+
+.home-posts { 
+  list-style: none; 
+}
+.home-posts li{
+  padding: 32px 0;
+  border-bottom: 1px solid black; 
+}
+.home-posts li:first-of-type{
+  padding-top: 0;
+}
+.home-posts li:last-of-type{
+  border-bottom: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  #content{
+    float: none;
+    clear: both;
+    width: 100%;
+    border-top: 1px solid black;
+  }
+}
+
+
+/* Post styles */
+/* ----------------------------------------------------------*/
+
+.post p{
+  margin-bottom: 20px;
+}
+
+.post-title{
+  font-size: 36px;
+  font-family: Georgia, serif;
+  line-height: 1.05;
+  margin: 0 0 2px 0;
+}
+.post-title a{
+  color: #222;
+}
+
+.post-date{
+  display: block;
+  margin-left: 3px;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 22px;
+}
+
+/* media queries */
+/* ----------------------------------------------------------*/
+
